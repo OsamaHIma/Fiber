@@ -5,7 +5,7 @@ const section = document.querySelector('.comments');
 let started = false;
 
 window.onscroll = () => {
-  if(window.scrollY >= section.offsetTop - 150) {
+  if(window.scrollY >= section.offsetTop - 10) {
     if(!started) {
       nums.forEach(num => {
         startCount(num)

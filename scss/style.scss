@@ -7,10 +7,9 @@ $white: #fbf8f3;
 $black: #222222;
 $purple: #4d13d1;
 
-scrollbar styling
+//scrollbar styling
 ::-webkit-scrollbar {
     width: 1.4em;
-    z-index: 20;
 }
 ::-webkit-scrollbar-track {
     background: #6a30efce;

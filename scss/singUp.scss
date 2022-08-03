@@ -3,6 +3,21 @@
     src: url("/fonts/Poppins-Regular.ttf");
 }
 
+scrollbar styling
+::-webkit-scrollbar {
+    width: 1.4em;
+}
+::-webkit-scrollbar-track {
+    background: #6a30efce;
+    border-radius: 100vw;
+    margin: .4em 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #6a11cb 0%, #5318dc 100%);
+    border-radius: 100vw;
+}
+
 ::selection {
     color: #fff;
     background-color: #6830ea;

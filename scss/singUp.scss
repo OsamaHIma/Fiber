@@ -15,6 +15,7 @@
 }
 
 body {
+    height: 100vh;
     font-family: "poppins", sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -22,6 +23,9 @@ body {
 
 #text-col {
     margin: auto 0;
+    .container {
+        margin: auto 0;
+    }
 }
 
 .heading-txt {
@@ -114,5 +118,22 @@ form {
 @media (max-width: 768px) {
     .overlay {
         display: none;
+    }
+    #text-col {
+        margin: auto;
+        width: 90%;
+        .container {
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    #text-col {
+        width: 100%;
+        .container {
+            width: 100%;
+            padding: 0 1em;
+        }
     }
 }

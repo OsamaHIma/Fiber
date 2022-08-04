@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- description -->
-    <meta name="description" content="Fiber is a website that provides you with hundreds of templates for your cool portfolio">
+    <meta name="description"
+        content="Fiber is a website that provides you with hundreds of templates for your cool portfolio">
     <!-- tab icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
@@ -32,6 +33,7 @@
 </head>
 
 <body>
+    <button class="btn toTop" onclick="topFunction()"><i class="fa fa-arrow-up"></i></button>
     <nav class="navbar navbar-expand-lg pt-4">
         <div class="container-fluid px-5">
             <a class="navbar-brand" href="#">Fiber</a>
@@ -102,10 +104,12 @@
         </div>
     </header>
 
+
     <main>
         <section class="features px-4">
             <div class="container-fluid" data-aos="fade-down">
                 <div class="heading-txt">
+
                     <p>Why Fiber?</p>
                     <h3>
                         A good protfolio means good employability.
@@ -187,7 +191,7 @@
         <section class="comments">
             <div class="container-fluid px-4">
                 <div class="row">
-                    <div class="col-md-4" data-aos="fade-right"  data-aos-duration="2300">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-duration="2300">
                         <div class="card mb-5">
                             <div class="card-body p-4">
                                 <div class="card-img w-25 d-inline-block mb-3">
@@ -209,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="flip-up"  data-aos-duration="2000">
+                    <div class="col-md-4" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card mb-5">
                             <div class="card-body p-4">
                                 <div class="card-img w-25 d-inline-block mb-3">
@@ -231,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-left"  data-aos-duration="2300">
+                    <div class="col-md-4" data-aos="fade-left" data-aos-duration="2300">
                         <div class="card">
                             <div class="card-body p-4">
                                 <div class="card-img w-25 d-inline-block mb-3">
@@ -264,7 +268,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about">
-                            <h4>Fiber</h4>
+                            <h4><a href="#" class="text-black">Fiber</a></h4>
                             <p>
                                 with fiber you cane setup your personal portfolio in minutes
                                 with a hunders of templates and more.
@@ -323,9 +327,9 @@
             </div>
         </div>
     </footer>
-        <script>
-            AOS.init();
-        </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

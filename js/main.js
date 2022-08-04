@@ -1,10 +1,12 @@
 const togglePassword = document.querySelector("#togglePass");
 const password = document.querySelector("#password");
-let nums = document.querySelectorAll('.num');
+const nums = document.querySelectorAll('.num');
+const toTop = document.querySelector('.toTop');
 const section = document.querySelector('.comments');
 let started = false;
 
 window.onscroll = () => {
+  //counter
   if(window.scrollY >= section.offsetTop - 10) {
     if(!started) {
       nums.forEach(num => {
@@ -12,10 +14,16 @@ window.onscroll = () => {
       });
     }
     started = true;
+  };
+  //scroll to top
+  if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
+    toTop.style.right = "1.3rem";
+  } else {
+    toTop.style.right = "-100px";
   }
 }
-
-function startCount (el) {
+//counter
+function startCount (el){
   let goal = el.dataset.goal;
   let count = setInterval (() => {
     el.textContent++;
@@ -25,6 +33,16 @@ function startCount (el) {
   }, 2500 / goal)
 }
 
+// scroll to top on click
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  })
+}
+
+// toggle show password
 togglePassword.addEventListener("click",  () => {
   // toggle the type attribute
   const type = password.getAttribute("type") === "password" ? "text" : "password";

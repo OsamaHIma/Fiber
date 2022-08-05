@@ -17,6 +17,7 @@ window.onscroll = () => {
   };
   //scroll to top
   if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
+    toTop.style.opacity = "1";
     toTop.style.right = "1.3rem";
   } else {
     toTop.style.right = "-100px";

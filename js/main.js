@@ -7,7 +7,7 @@ let started = false;
 
 window.onscroll = () => {
   //counter
-  if(window.scrollY >= section.offsetTop - 10) {
+  if(window.scrollY >= section.offsetTop +100) {
     if(!started) {
       nums.forEach(num => {
         startCount(num)
